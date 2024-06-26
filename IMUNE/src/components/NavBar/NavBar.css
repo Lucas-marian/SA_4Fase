@@ -1,0 +1,60 @@
+.navbar {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px; /* Reduzido o padding para economizar espaço */
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente com os links */
+}
+
+.navbar-logo img {
+    height: 50px; 
+    width: auto; /* Permite que a largura seja ajustada automaticamente */
+    margin-right: 10px; /* Espaçamento entre o logo e os links */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px; /* Aumenta o espaçamento entre os links */
+    flex: 1; /* Ocupa todo o espaço disponível */
+    justify-content: center; /* Centraliza os links horizontalmente */
+}
+
+.navbar-links a {
+    color: blue;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte dos links */
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-auth {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-auth a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-auth a:hover {
+    text-decoration: underline;
+}
+
+.navbar-voltar{
+    color: blue;
+}

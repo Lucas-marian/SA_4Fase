@@ -1,0 +1,205 @@
+/* MinhaAgenda.css */
+
+/* Estilos gerais */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.titulo{
+  color: rgb(2, 2, 129);
+}
+
+.minha-agenda {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.main-content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px); /* Altura total da tela menos a altura da navbar */
+  margin-top: 60px; /* Afasta do topo */
+}
+
+.content {
+  width: 100%; /* Largura ajustada conforme necessário */
+  max-width: 900px; /* Largura máxima para evitar que ocupe toda a tela */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin-bottom: 20px; /* Espaço abaixo da div.content */
+  max-height: calc(100vh - 180px); /* Altura máxima ajustada */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical caso necessário */
+  margin: 6% 0% 0% 0%;
+}
+
+.calendar {
+  width: 100%; /* Ajuste a largura do calendário */
+  max-width: 900px; /* Defina o tamanho máximo desejado para o calendário */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  color: rgb(2, 2, 129);
+}
+
+.rbc-calendar {
+  font-size: 14px; /* Ajuste o tamanho da fonte do calendário conforme necessário */
+}
+
+.calendar-header {
+  margin-bottom: 10px; /* Reduzido o espaço abaixo do cabeçalho do calendário */
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Reduzido o espaçamento entre os botões */
+}
+
+.add-task,
+.edit-task,
+.delete-task {
+  padding: 8px 12px; /* Reduzido o padding dos botões */
+  font-size: 0.9rem; /* Reduzido o tamanho da fonte dos botões */
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Reduzido o espaçamento entre os ícones e o texto */
+}
+
+.add-task {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.add-task:hover {
+  background-color: #218838;
+}
+
+.edit-task {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.edit-task:hover {
+  background-color: #0056b3;
+}
+
+.delete-task {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-task:hover {
+  background-color: #c82333;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px; /* Largura máxima para o modal (diminuída para 400px) */
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  color: rgb(2, 2, 129);
+}
+
+.modal form {
+  display: grid;
+  gap: 15px;
+}
+
+.modal label {
+  font-size: 0.9rem; /* Reduzido o tamanho da fonte dos labels */
+  display: flex;
+  flex-direction: column;
+  color: blue;
+}
+
+.modal label span {
+  font-weight: bold;
+  margin-bottom: 5px;
+  
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+  padding: 10px;
+  font-size: 0.9rem; /* Reduzido o tamanho da fonte dos inputs */
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+
+.modal input[type="date"] {
+  /* Ajuste o estilo do input de data conforme necessário */
+}
+
+.modal textarea {
+  min-height: 80px; /* Altura mínima para a área de texto */
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px; /* Ajustado o padding dos botões */
+  font-size: 0.9rem; /* Reduzido o tamanho da fonte dos botões */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+
+.modal-buttons .add {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.modal-buttons .add:hover {
+  background-color: #218838;
+}
+
+.modal-buttons .cancel {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.modal-buttons .cancel:hover {
+  background-color: #c82333;
+}
+
+.modal-buttons .cancel {
+  margin-left: auto; /* Alinha o botão "Cancelar" à direita */
+}
+
+

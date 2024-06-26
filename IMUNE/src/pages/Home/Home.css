@@ -1,0 +1,144 @@
+/* Home.css */
+
+/* Estilo global para o body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Container principal da página */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Parte 1 - Carrossel de imagens */
+.parte-um {
+  width: 100%;
+  position: relative;
+}
+
+.parte-um .imagem-container {
+  width: 100%;
+}
+
+.parte-um img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Parte 2 - Cards de serviço */
+.parte-dois {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.card {
+  height: 15%;
+  width: 20%;
+  background-color: rgb(73, 73, 228);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card-content {
+  margin-bottom: 20px;
+}
+
+.card-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.card-content p {
+  color: white;
+}
+
+/* Parte 3 - Imagens e texto */
+.parte-tres {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.lado-direito {
+  width: 45%;
+  border: 2px solid blue;
+  padding: 15px;
+}
+
+.lado-esquerdo img,
+.lado-direito img {
+  max-width: 100%;
+}
+
+/* Parte 4 - Vídeo vertical e aviso */
+.parte-quatro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.video-vertical {
+  width: 40%;
+}
+
+.video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.aviso-container {
+  width: 45%;
+}
+
+.text-destaque {
+  font-size: xx-large;
+  font-weight: 900;
+  color: rgb(2, 2, 228);
+}
+
+.text-descricao {
+  color: rgb(73, 73, 228);
+  line-height: 1.5;
+  font-size: large;
+}
+
+/* Parte 6 - Rodapé */
+.parte-seis {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: rgb(73, 73, 228);
+  color: #fff;
+}
+
+.parte-seis a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.parte-seis a:hover {
+  text-decoration: underline;
+}
+
+/* .fotos{
+  border: 2px solid blue;
+} */

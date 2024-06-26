@@ -1,0 +1,92 @@
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro para melhor contraste com o texto */
+}
+
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container-central {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.titulo-recuperacao {
+  color: blue;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.label {
+  color: blue;
+  font-weight: bold;
+}
+
+.input-email,
+.input-senha-nova,
+.input-senha-nova2 {
+  border: 1px solid blue;
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.botao-recuperar {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botao-recuperar:hover {
+  background-color: darkblue; /* Alterando a cor do fundo no hover */
+  color: white; /* Mantendo o texto branco no hover */
+}
+
+.link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,116 @@
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container-central {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.titulo-login {
+  color: blue;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.label {
+  color: blue;
+  font-weight: bold;
+}
+
+.input-gmail,
+.input-senha {
+  border: 1px solid blue;
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icone {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: blue;
+}
+
+.botao-login {
+  background-color: rgb(24, 8, 252);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-decoration: none; 
+  display: inline-block;
+  border-radius: 9px;
+
+}
+
+.botao-login:hover {
+  background-color: darkblue;
+}
+
+.link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.butao{
+  position: relative;
+  top: 20%;
+  left: 25%;
+  background-color: blue;
+  height: 40px;
+  width: 50%;
+  border-radius: 18px;
+  color: white;
+ }

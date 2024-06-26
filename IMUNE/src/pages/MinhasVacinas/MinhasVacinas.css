@@ -1,0 +1,116 @@
+/* Reset padrão do body para garantir uma configuração limpa */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Cor de fundo alternativa */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto; /* Aumenta o espaçamento vertical */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  font-size: 24px;
+  color: #036;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categoria {
+  margin-bottom: 40px; /* Espaçamento entre categorias */
+  padding: 15px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Cor de fundo alternativa */
+}
+
+.categoria h3 {
+  background-color: #036;
+  color: #fff;
+  padding: 10px;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-vacina {
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card-vacina p {
+  margin: 5px 0;
+}
+
+.status-ok {
+  color: green;
+  font-weight: bold;
+}
+
+.status-pendente {
+  color: red;
+  font-weight: bold;
+}
+
+.form-cadastro {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  border: 2px solid blue;
+}
+
+.form-cadastro h4 {
+  color: #036;
+  margin-bottom: 10px;
+}
+
+.form-cadastro label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-cadastro input[type="email"],
+.form-cadastro input[type="text"],
+.form-cadastro input[type="date"],
+.form-cadastro input[type="number"],
+.form-cadastro select {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid blue;
+  border-radius: 3px;
+}
+
+.form-cadastro button {
+  background-color: #036;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-cadastro button:hover {
+  background-color: #025;
+}
+
+.mensagem-vazio {
+  text-align: center;
+  color: #888;
+}

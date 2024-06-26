@@ -1,0 +1,11 @@
+.botao{
+   position: relative;
+   top: 20%;
+   left: 25%;
+   background-color: blue;
+   height: 40px;
+   width: 50%;
+   border-radius: 18px;
+   color: white;
+  }
+  
